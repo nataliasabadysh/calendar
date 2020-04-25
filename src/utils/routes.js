@@ -9,9 +9,11 @@ import {
   CommentOutlined,
   GlobalOutlined,
   UserAddOutlined,
-  ScheduleOutlined
+  ScheduleOutlined,
+  WechatOutlined,
+  BellOutlined,
+  UserOutlined
 } from '@ant-design/icons';
-
 
 export const path = Object.freeze({
     home: '/',
@@ -24,8 +26,46 @@ export const path = Object.freeze({
     calendar: '/calendar',
     helpcenter: '/help-center',
     settings: '/settings',
+    support:'/support',
+    notification: '/notification',
+    profile: '/profile',
+    user: '/user'
 });
 
+// Nav bar 
+export const routers_nav = [
+  {
+    path: path.support,
+    label: 'Support',
+    exact: false,
+    component: lazy(() => import('../views/Support' /* webpackChunkName: "support-page" */)),
+    icon: <WechatOutlined />
+  },
+  {
+    path: path.notification,
+    label: 'Notification',
+    exact: false,
+    component: lazy(() => import('../views/Notification' /* webpackChunkName: "notification-page" */)),
+    icon: <BellOutlined />
+  },
+  {
+    path: path.profile,
+    label: 'Profile',
+    exact: false,
+    component: lazy(() => import('../views/Profile' /* webpackChunkName: "profile-page" */)),
+    icon: <UserOutlined />,
+  },
+  {
+    path: path.user,
+    label: 'Image',
+    exact: false,
+    component: lazy(() => import('../views/Profile' /* webpackChunkName: "profile-page" */)),
+    name: 'John Doe',
+    img: 'https://pngimage.net/wp-content/uploads/2018/06/john-doe-png.png'
+  },
+];
+
+// Side bar 
 export const routers = [
   {
     path: path.home,

@@ -11,7 +11,7 @@ const NavItem = ({ path, icon, label, exact }) =>{
                 to={path} 
                 exact={exact}   
                 className='link'
-                activeStyle={{  background: '#3c3b53', borderLeft: '4px solid #a19ef7'}}
+                activeStyle={{  background: '#3c3b53', borderLeft: '4px solid #a19ef7', color: '#a19ef7'}}
             > 
             {icon} <span className='nav-label'>{label}</span>
             </NavLink> 

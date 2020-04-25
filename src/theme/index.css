@@ -12,12 +12,53 @@ body {
   background-color: #f1f1f1;
   font-family: system-ui;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-/* nav*/
-.nav{
-  background: #43425c;
+/* header */
+.page-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  z-index: 999;
+}
+.page-header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 68px;
+}
+
+.site-nav {
+  padding-right: 30px; 
+  display: flex;
+}
+
+.site-nav li{
+  color: #333;
+  padding: 10px 20px;
+}
+
+.site-nav__link {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.user_view{
+  padding: 0 25px 0 45px;
+  margin: 0;
+  color: #333;
+  border-left: 1px solid #43425c;
 
 }
+
 /* aside nav */
 .wrapper{
   display: flex;
@@ -30,34 +71,74 @@ body {
   background: #43425c;
   position: fixed;
 }
+.main{
+  width: 100%;
+  margin-left: 250px; 
+}
 
 .wrapper .main_content{
   width: 100%;
-  margin-left: 300px;
+  margin-left: 250px;
 }
+
 /* logo */
 .wrapper .sidebar h2{
   color: #fff;
   text-transform: uppercase;
   padding: 20px 30px;
-  margin-bottom: 30px;
+  margin: 0;
   background-color: #3c3b53;
 }
 
-.list{
-  padding: 50px;
-  margin: 0 auto;
-
-}
 .link{
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 12px;
+  padding: 20px 15px;
   font-weight: 700;
   color: #fff;
   border: 4px solid transparent;
 }
+.link_nav{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #000;
+  border-bottom: 1px solid transparent;
+}
 .nav-label{
   padding: 0 10px;
+}
+
+/* search input */
+input{
+  width: 300px;
+  padding: 10px 40px;
+  display: flex;
+  outline: none;
+  font-size: 17px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  border: transparent;
+  outline: none;
+}
+
+/* plasholder for the page */
+.section__plasephoder{
+    margin: 40px auto 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.section__title{
+  color: #43425c;
+  font-weight: 700;
+}
+.section__contant{
+  width: 70%;
+  padding: 30px;
+  margin: 40px auto 0;
+  border: 1px solid #43425c;
 }

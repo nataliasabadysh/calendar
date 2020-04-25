@@ -1,9 +1,11 @@
 import React from 'react';
 
-const HomeView = () => (
-    <div>
-      <h1>HomeView</h1>
-    </div>
+const HomePage = () => (
+  <div className = 'section__plasephoder'>
+    <section>
+      <h1 className="section__title">Home Page</h1>
+    </section>
+  </div>
 );
   
-export default HomeView;
+export default HomePage;
