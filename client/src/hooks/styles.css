@@ -1,0 +1,65 @@
+.backDrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow : auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.modal {
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+    width: 800px;
+    margin: 80px auto;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+label,
+input {
+    display: block;
+}
+
+label {
+    padding-bottom: 8px;
+}
+
+.sections{
+    display: flex;
+    width: 70%;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.btnClose{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 11px 14px;
+    border-radius: 0;
+    background: #eee;
+    color: #3339;
+}
+
+.btnClose:hover{
+    background: #ddd;
+    color: hsla(0, 0%, 20%, 0.65);
+}
+
+.btn_modal{
+    margin-top: -48px;
+    margin-bottom: 10px;
+}

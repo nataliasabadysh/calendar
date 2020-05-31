@@ -1,0 +1,94 @@
+/* 
+:root {
+    --paletteColor1: #eff8fd;
+    --paletteColor2: #161619;
+    --paletteColor3: #dda415;
+    --paletteColor4: #fa8599;
+    --paletteColor5: #f7ab7f;
+
+    font-family: system-ui;
+    font-smoothing: antialiased;
+    font-variant-ligatures: none;
+
+    & body {
+        background-color: var(--paletteColor1);
+        margin: 0;
+        padding: 15px;
+        min-height: calc(100vh - 30px);
+        color: var(--paletteColor2);
+
+        & ::selection {
+            color: var(--paletteColor1);
+            background-color: var(--paletteColor2);
+        }
+
+        & h1 {
+            font-size: 44px;
+        }
+
+        & p {
+            font-size: 22px;
+        }
+
+        & ul {
+            list-style: none;
+            font-size: 20px;
+            margin-bottom: 25px;
+            padding: 0;
+
+            & li:not(:last-child) {
+                margin-bottom: 7px;
+            }
+        }
+
+        & a {
+            display: inline-block;
+            color: var(--paletteColor2);
+            text-align: center;
+            font-size: 3vw;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: var(--paletteColor3);
+            }
+        }
+
+        & button {
+            min-width: 150px;
+            min-height: 32px;
+            margin: 0;
+            padding: 0 7px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: transparent;
+            border: 1px solid currentColor;
+            transition: color 0.1s ease;
+            outline: none;
+
+            &:hover {
+                color: var(--paletteColor3);
+            }
+
+            &:not(:last-child) {
+                margin-right: 7px;
+                margin-bottom: 7px;
+            }
+        }
+
+        & input {
+            height: 32px;
+            margin: 0;
+            margin-right: 7px;
+            margin-bottom: 7px;
+            padding: 0;
+            padding-left: 7px;
+            padding-right: 7px;
+            outline: none;
+            border: 1px solid currentColor;
+            font-size: 20px;
+            box-sizing: border-box;
+            background-color: transparent;
+        }
+    }
+} */

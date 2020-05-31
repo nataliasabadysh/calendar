@@ -1,0 +1,11 @@
+/* Design Kit */
+@value red-color: red;
+
+
+/*  
+@value red-color from '../../vars.module.css';
+
+.name {
+  color: red-color;
+}
+*/
